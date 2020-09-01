@@ -4,13 +4,13 @@ import Constants from 'expo-constants';
 
 import colors from '../../styles/colors';
 
-const statusBarHeight = 
+const statusBarHeight =
   Platform.OS === 'android' ? Constants.statusBarHeight : 0;
 
 export const Wrapper = styled.SafeAreaView`
   background: ${colors.primary};
   flex: 1;
-  padding-top: ${statusBarHeight + 'px'};
+  padding-top: ${`${statusBarHeight}px`};
 
   justify-content: center;
   align-items: center;

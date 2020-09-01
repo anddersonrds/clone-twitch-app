@@ -1,5 +1,4 @@
 import React from 'react';
-import { View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
@@ -34,61 +33,61 @@ const Routes: React.FC = () => (
           fontFamily: 'roboto_400',
           fontSize: 11,
           marginTop: 5,
-        }, 
+        },
         inactiveTintColor: colors.black,
         activeTintColor: colors.purple,
       }}
     >
-      <Screen 
-        name="Following" 
-        component={Following} 
+      <Screen
+        name="Following"
+        component={Following}
         options={{
-          tabBarIcon: ({size, focused }) => (
-            <Ionicons 
-              name="md-heart" 
-              size={size} 
-              color={focused ? colors.purple : colors.black } 
+          tabBarIcon: ({ size, focused }) => (
+            <Ionicons
+              name="md-heart"
+              size={size}
+              color={focused ? colors.purple : colors.black}
             />
-          )
+          ),
         }}
       />
-      <Screen 
-        name="Discover" 
-        component={ComingSoon} 
+      <Screen
+        name="Discover"
+        component={ComingSoon}
         options={{
-          tabBarIcon: ({size, focused }) => (
-            <MaterialCommunityIcons 
-              name="compass-outline" 
-              size={size} 
-              color={focused ? colors.purple : colors.black } 
+          tabBarIcon: ({ size, focused }) => (
+            <MaterialCommunityIcons
+              name="compass-outline"
+              size={size}
+              color={focused ? colors.purple : colors.black}
             />
-          )
+          ),
         }}
       />
-      <Screen 
-        name="Browse" 
-        component={ComingSoon} 
+      <Screen
+        name="Browse"
+        component={ComingSoon}
         options={{
-          tabBarIcon: ({size, focused }) => (
-            <Ionicons 
-              name="md-browsers" 
-              size={size} 
-              color={focused ? colors.purple : colors.black } 
+          tabBarIcon: ({ size, focused }) => (
+            <Ionicons
+              name="md-browsers"
+              size={size}
+              color={focused ? colors.purple : colors.black}
             />
-          )
+          ),
         }}
       />
-      <Screen 
-        name="Exports" 
-        component={ComingSoon} 
+      <Screen
+        name="Exports"
+        component={ComingSoon}
         options={{
-          tabBarIcon: ({size, focused }) => (
-            <MaterialCommunityIcons 
-              name="trophy-outline" 
-              size={size} 
-              color={focused ? colors.purple : colors.black } 
+          tabBarIcon: ({ size, focused }) => (
+            <MaterialCommunityIcons
+              name="trophy-outline"
+              size={size}
+              color={focused ? colors.purple : colors.black}
             />
-          )
+          ),
         }}
       />
     </Navigator>
